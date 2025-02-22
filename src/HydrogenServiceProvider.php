@@ -15,7 +15,7 @@ class HydrogenServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $config = realpath(__DIR__ . '/../resources/config/hydrogenpay.php');
+        $config = realpath(__DIR__ . '/../config/hydrogenpay.php');
 
         $this->publishes([
             $config => config_path('hydrogenpay.php')
