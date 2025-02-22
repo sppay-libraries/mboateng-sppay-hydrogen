@@ -15,11 +15,10 @@ class HydrogenServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $config = realpath(__DIR__ . '/../config/hydrogenpay.php');
 
         $this->publishes([
-            $config => config_path('hydrogenpay.php')
-        ]);
+            __DIR__ . '/../config/hydrogen.php' => config_path('hydrogen.php'),
+        ], 'config');
     }
 
     /**
@@ -30,11 +29,11 @@ class HydrogenServiceProvider extends ServiceProvider
     public function register()
     {
 
-        $this->app->singleton('hydrogenpay-laravel', function ($app) {
+        $this->app->singleton('hydrogen', function ($app) {
             return new Hydrogen($app->make("request"));
         });
 
-        $this->app->alias('hydrogenpay-laravel', "MBoateng\Hydrogen\Hydrogen");
+        $this->app->alias('hydrogen', "MBoateng\Hydrogen\Hydrogen");
     }
 
     /**
@@ -44,6 +43,6 @@ class HydrogenServiceProvider extends ServiceProvider
      */
     public function provides()
     {
-        return ['hydrogenpay-laravel'];
+        return ['hydrogen'];
     }
 }
