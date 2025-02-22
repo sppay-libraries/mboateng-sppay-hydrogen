@@ -12,7 +12,7 @@
  */
 
 
-namespace HydrogenAfrica\Hydrogen\Facades;
+namespace Mboateng\Hydrogen\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

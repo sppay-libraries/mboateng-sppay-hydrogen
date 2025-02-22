@@ -4,17 +4,17 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit8a4499dac5afa7b34b4be8ff61e67303
+class ComposerStaticInitf8c47aaa2875113dad5949738b181310
 {
     public static $prefixLengthsPsr4 = array (
         'M' => 
         array (
-            'Mboateng\\HydrogenpayLaravel\\' => 28,
+            'Mboateng\\Hydrogen\\' => 18,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Mboateng\\HydrogenpayLaravel\\' => 
+        'Mboateng\\Hydrogen\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
@@ -22,14 +22,15 @@ class ComposerStaticInit8a4499dac5afa7b34b4be8ff61e67303
 
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Mboateng\\Hydrogen\\Hydrogen' => __DIR__ . '/../..' . '/src/Hydrogen.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit8a4499dac5afa7b34b4be8ff61e67303::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit8a4499dac5afa7b34b4be8ff61e67303::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit8a4499dac5afa7b34b4be8ff61e67303::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf8c47aaa2875113dad5949738b181310::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf8c47aaa2875113dad5949738b181310::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitf8c47aaa2875113dad5949738b181310::$classMap;
 
         }, null, ClassLoader::class);
     }

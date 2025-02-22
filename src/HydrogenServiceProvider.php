@@ -1,6 +1,6 @@
 <?php
 
-namespace HydrogenAfrica\Hydrogen;
+namespace MBoateng\Hydrogen;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -34,7 +34,7 @@ class HydrogenServiceProvider extends ServiceProvider
             return new Hydrogen($app->make("request"));
         });
 
-        $this->app->alias('hydrogenpay-laravel', "HydrogenAfrica\Hydrogen\Hydrogen");
+        $this->app->alias('hydrogenpay-laravel', "MBoateng\Hydrogen\Hydrogen");
     }
 
     /**

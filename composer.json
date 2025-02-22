@@ -1,18 +1,31 @@
 {
-    "name": "mboateng/hydrogenpay-laravel",
-    "description": "michael boateng",
+    "name": "mboateng/hydrogen",
+    "description": "Michael Boateng",
     "type": "package",
     "license": "MIT",
     "autoload": {
+        "classmap": [
+            "src/Hydrogen.php"
+        ],
         "psr-4": {
-            "Mboateng\\HydrogenpayLaravel\\": "src/"
+            "Mboateng\\Hydrogen\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "michael boateng"
+            "name": "Michael Boateng"
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HydrogenAfrica\\Hydrogen\\HydrogenServiceProvider"
+            ],
+            "aliases": {
+                "Hydrogen": "HydrogenAfrica\\Hydrogen\\Facades\\Hydrogen"
+            }
+        }
+    }
 }

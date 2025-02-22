@@ -1,6 +1,6 @@
 <?php
 
-namespace HydrogenAfrica\Hydrogen\Helpers;
+namespace Mboateng\Hydrogen\Helpers;
 
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Http;
@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Http;
  * This package enables seamless payment processing, including card transactions
  * and account transfers, for quick and efficient service delivery.
  *
- * @author HydrogenAfrica <https://hydrogenpay.com>
+ * @author Hydrogen <https://hydrogenpay.com>
  * @version 1.0
  */
 

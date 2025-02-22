@@ -1,10 +1,10 @@
 <?php
 
-namespace HydrogenAfrica\Hydrogen;
+namespace Mboateng\Hydrogen;
 
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Http;
-use HydrogenAfrica\Hydrogen\Helpers\Transfers;
+use MBoateng\Hydrogen\Helpers\Transfers;
 
 /**
  * HydrogenPay Laravel Package
@@ -12,7 +12,7 @@ use HydrogenAfrica\Hydrogen\Helpers\Transfers;
  * This package enables seamless payment processing, including card transactions
  * and account transfers, for quick and efficient service delivery.
  *
- * @author HydrogenAfrica <contact@hydrogenafrica.com>
+ * @author Hydrogen <contact@hydrogen.com>
  * @version 1.0
  */
 
