@@ -21,10 +21,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "HydrogenAfrica\\Hydrogen\\HydrogenServiceProvider"
+                "MBoateng\\Hydrogen\\HydrogenServiceProvider"
             ],
             "aliases": {
-                "Hydrogen": "HydrogenAfrica\\Hydrogen\\Facades\\Hydrogen"
+                "Hydrogen": "MBoateng\\Hydrogen\\Facades\\Hydrogen"
             }
         }
     }
