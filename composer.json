@@ -1,0 +1,18 @@
+{
+    "name": "mboateng/hydrogenpay-laravel",
+    "description": "michael boateng",
+    "type": "package",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mboateng\\HydrogenpayLaravel\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "michael boateng"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
